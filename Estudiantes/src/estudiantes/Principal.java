@@ -24,6 +24,12 @@ public class Principal {
         estudiantes[2].setMaterias(m2);
         estudiantes[3].setMaterias(m3);
         estudiantes[4].setMaterias(m4);   
+         
+        int materia1 = 0;
+        int materia2 = 0;
+        int materia3 = 0;
+        int materia4 = 0;
+        int materia5 = 0;
         
         System.out.println(" ****** Información ****** ");
         
@@ -37,18 +43,27 @@ public class Principal {
          System.out.println(" Materia: ");
          for(int j=0;j <materiasEstudiante.length;j++){
             System.out.println(" " + materiasEstudiante[j]);
+                if(materiasEstudiante[j]=="m1"){
+                    materia1 = materia1 +1;
+                }else if(materiasEstudiante[j]=="m2"){
+                    materia2 = materia2 +1;
+                }else if(materiasEstudiante[j]=="m3"){
+                    materia3 = materia3 +1;
+                }else if(materiasEstudiante[j]=="m4"){
+                    materia4 = materia4 +1;
+                }else if(materiasEstudiante[j]=="m5"){
+                    materia5 = materia5 +1;
+                }
             }
         }
            System.out.println("\n");
-        /*
-         System.out.println(" Resumen Materias ");
-         System.out.println(" M1 = " + );
-         System.out.println(" M2 = " + );
-         System.out.println(" M3 = " + );
-         System.out.println(" M4 = " + );
-         System.out.println(" M5 = " + );
-         */
         
+         System.out.println(" Resumen Materias ");
+         System.out.println(" M1 = " + materia1 );
+         System.out.println(" M2 = " + materia2 );         
+         System.out.println(" M3 = " + materia3 );
+         System.out.println(" M4 = " + materia4 );
+         System.out.println(" M5 = " + materia5 );
     }
     
 }
